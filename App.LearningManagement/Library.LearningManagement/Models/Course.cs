@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library.LearningManagement.Models
 {
-    internal class Course
+    public class Course
     {
         public string Code { get; set; }
         public string Name { get; set; }
