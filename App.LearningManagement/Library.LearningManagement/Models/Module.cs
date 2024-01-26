@@ -4,16 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.LearningManagement.Models
-{
-    internal class Module
-    {
+namespace Library.LearningManagement.Models {
+    public class Module {
         public string? Name { get; set; }
         public string? Description { get; set; }
         public List<ContentItem> Content { get; set; }
 
-        public Module()
-        {
+        public Module() {
             Content = new List<ContentItem>();
         }
     }
