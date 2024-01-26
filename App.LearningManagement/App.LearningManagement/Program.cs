@@ -16,6 +16,7 @@ namespace CanvasProject {
                 Console.WriteLine("3. Search for a student");
                 Console.WriteLine("4. Update a student");
                 Console.WriteLine("5. Add a new course");
+                Console.WriteLine("6. List all courses");
                 var input = Console.ReadLine();
                 if (int.TryParse(input, out int result)) {
                     if (result == 0) {
@@ -30,6 +31,8 @@ namespace CanvasProject {
                         studentHelper.UpdateStudentRecord();
                     } else if (result == 5) {
                         courseHelper.CreateCourseRecord();
+                    } else if (result == 6) {
+                        courseHelper.ListCourses();
                     }
                 }
             }
