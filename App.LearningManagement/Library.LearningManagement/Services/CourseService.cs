@@ -15,5 +15,13 @@ namespace Library.LearningManagement.Services
         {
             courseList.Add(course);
         }
+
+        public List<Course> Courses
+        {
+            get
+            {
+                return courseList;
+            }
+        }
     }
 }
