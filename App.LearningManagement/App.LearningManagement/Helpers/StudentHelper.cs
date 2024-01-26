@@ -18,6 +18,7 @@ namespace App.LearningManagement.Helpers
 
             Console.WriteLine("What is the ID of the student?");
             var id = Console.ReadLine();
+
             Console.WriteLine("What is the classification of the student? [(F)reshman, S(O)phomore, (J)unior, (S)enior]");
             var classification = Console.ReadLine() ?? string.Empty;
 
