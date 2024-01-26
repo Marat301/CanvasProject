@@ -1,4 +1,4 @@
-﻿using App.LearningManagement.Helpers;
+using App.LearningManagement.Helpers;
 using Library.LearningManagement.Models;
 
 namespace CanvasProject {
@@ -24,7 +24,6 @@ namespace CanvasProject {
                 }
                 
             }
-
         }
     }
 }
