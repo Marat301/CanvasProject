@@ -1,9 +1,9 @@
 using App.LearningManagement.Helpers;
-using Library.LearningManagement.Models;
 
 namespace CanvasProject {
     internal class Program {
         static void Main(string[] args) {
+            //var studentServ = new StudentService();
             var studentHelper = new StudentHelper();
             var courseHelper = new CourseHelper();
 
