@@ -74,7 +74,7 @@ namespace App.LearningManagement.Helpers
 
         public void SearchStudents()
         {
-            Console.WriteLine("Enter a query: ");
+            Console.WriteLine("Enter the student: ");
             var query = Console.ReadLine() ?? string.Empty;
 
             studentService.Search(query).ToList().ForEach(Console.WriteLine);
