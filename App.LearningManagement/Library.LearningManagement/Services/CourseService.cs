@@ -1,23 +1,19 @@
 ﻿using Library.LearningManagement.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Library.LearningManagement.Services
-{
-    public class CourseService
-    {
+namespace Library.LearningManagement.Services {
+    public class CourseService {
         private List<Course> courseList;
         private static CourseService _instance;
 
-        public static CourseService Current
-        {
-            get
-            {
-                if (_instance == null)
-                {
+        // initializes CourseService
+        private CourseService() {
+            courseList = new List<Course>();
+        }
+
+        // singleton to make sure we only have one course service
+        public static CourseService Current {
+            get {
+                if (_instance == null) {
                     _instance = new CourseService();
                 }
 
@@ -25,29 +21,23 @@ namespace Library.LearningManagement.Services
             }
         }
 
-        private CourseService()
-        {
-            courseList = new List<Course>();
-        }
-
-        public void Add(Course course)
-        {
+        // adds a course to the list
+        public void Add(Course course) {
             courseList.Add(course);
         }
 
-        public List<Course> Courses
-        {
-            get
-            {
+        // returns the list of courses
+        public List<Course> Courses {
+            get {
                 return courseList;
             }
         }
 
-        public IEnumerable<Course> Search (string query)
-        {
-            return Courses.Where(s => s.Name.ToUpper().Contains(query.ToUpper()) ||
-                s.Description.ToUpper().Contains(query.ToUpper()) ||
-                s.Code.ToUpper().Contains(query.ToUpper()));
+        // return all courses which contain query in name, description, or code
+        public IEnumerable<Course> Search(string query) {
+            return Courses.Where(course => course.Name.ToUpper().Contains(query.ToUpper()) ||
+                course.Description.ToUpper().Contains(query.ToUpper()) ||
+                course.Code.ToUpper().Contains(query.ToUpper()));
         }
     }
 }

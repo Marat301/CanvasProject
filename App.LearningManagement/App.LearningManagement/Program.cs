@@ -3,7 +3,6 @@ using App.LearningManagement.Helpers;
 namespace CanvasProject {
     internal class Program {
         static void Main(string[] args) {
-            //var studentServ = new StudentService();
             var studentHelper = new StudentHelper();
             var courseHelper = new CourseHelper();
 

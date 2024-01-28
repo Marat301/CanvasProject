@@ -1,49 +1,41 @@
 ﻿using Library.LearningManagement.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library.LearningManagement.Services {
     public class StudentService {
         private List<Person> studentList;
+        private static StudentService _instance;
 
-        private static StudentService? _instance;
-
-        private StudentService()
-        {
+        // initializes StudentService
+        private StudentService() {
             studentList = new List<Person>();
         }
 
-        public static StudentService? Current
-        {
-            get
-            {
-                if (_instance == null)
-                {
+        // singleton to make sure we only have one StudentService
+        public static StudentService Current {
+            get {
+                if (_instance == null) {
                     _instance = new StudentService();
                 }
+
                 return _instance;
             }
         }
 
-        public void Add(Person student) {
+        // adds a student to the list
+        public void Add(Person student) {   
             studentList.Add(student);
         }
 
-        public List<Person> Students
-        {
-            get
-            {
+        // returns the list of students
+        public List<Person> Students {
+            get {
                 return studentList;
             }
         }
 
-        public IEnumerable<Person> Search(string query)
-        {
-            return studentList.Where(s => s.Name.ToUpper().Contains(query.ToUpper()));
+        // returns all students which contain query in name
+        public IEnumerable<Person> Search(string query) {
+            return studentList.Where(student => student.Name.ToUpper().Contains(query.ToUpper()));
         }
     }
 }
