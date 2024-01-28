@@ -57,39 +57,41 @@ namespace App.LearningManagement.Helpers {
                 }
             }
 
+            // add assignments to the course
             Console.WriteLine("Would you like to add assignments? (Y/N)");
             var assignmentResponse = Console.ReadLine() ?? "N";
             var assignments = new List<Assignment>();
             if (assignmentResponse.Equals("Y", StringComparison.InvariantCultureIgnoreCase)) {
                 continueAdding = true;
-                while (continueAdding)
-                {
-                    // Name
+                while (continueAdding) {
+                    // get name of assignment
                     Console.WriteLine("Name: ");
                     var assignmentName = Console.ReadLine() ?? string.Empty;
 
-                    // Description
+                    // get description of assignment
                     Console.WriteLine("Description: ");
                     var assignmentDescription = Console.ReadLine() ?? string.Empty;
 
-                    // Total points
+                    // get total points of assignment
                     Console.WriteLine("Total Points: ");
                     var assignmentTotalPoints = decimal.Parse(Console.ReadLine() ?? "100");
 
-                    // Due Date
+                    // get due date of assignment
                     Console.WriteLine("Due Date: ");
                     var assignmentDueDate = DateTime.Parse(Console.ReadLine() ?? "01/01/1900");
 
-                    assignments.Add(new Assignment
-                    {
-                        Name = assignmentName, Description = assignmentDescription,
-                        TotalAvailablePoints = assignmentTotalPoints, DueDate = assignmentDueDate
+                    // add assignment
+                    assignments.Add(new Assignment {
+                        Name = assignmentName,
+                        Description = assignmentDescription,
+                        TotalAvailablePoints = assignmentTotalPoints,
+                        DueDate = assignmentDueDate
                     });
 
-                    Console.WriteLine("Add more courses? (Y/N)");
+                    // quit if not adding any more assignments
+                    Console.WriteLine("Add more assignments? (Y/N)");
                     assignmentResponse = Console.ReadLine() ?? "N";
-                    if (assignmentResponse.Equals("N", StringComparison.InvariantCultureIgnoreCase))
-                    {
+                    if (assignmentResponse.Equals("N", StringComparison.InvariantCultureIgnoreCase)) {
                         continueAdding = false;
                     }
                 }
