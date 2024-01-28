@@ -57,6 +57,43 @@ namespace App.LearningManagement.Helpers
                 }
             }
 
+            Console.WriteLine("Would you like to add assignments? (Y/N)");
+            var assignmentResponse = Console.ReadLine() ?? "N";
+            var assignments = new List<Assignment>();
+            if (assignmentResponse.Equals("Y", StringComparison.InvariantCultureIgnoreCase)) {
+                continueAdding = true;
+                while (continueAdding)
+                {
+                    // Name
+                    Console.WriteLine("Name: ");
+                    var assignmentName = Console.ReadLine() ?? string.Empty;
+
+                    // Description
+                    Console.WriteLine("Description: ");
+                    var assignmentDescription = Console.ReadLine() ?? string.Empty;
+
+                    // Total points
+                    Console.WriteLine("Total Points: ");
+                    var assignmentTotalPoints = decimal.Parse(Console.ReadLine() ?? "100");
+
+                    // Due Date
+                    Console.WriteLine("Due Date: ");
+                    var assignmentDueDate = DateTime.Parse(Console.ReadLine() ?? "01/01/1900");
+
+                    assignments.Add(new Assignment
+                    {
+                        Name = assignmentName, Description = assignmentDescription,
+                        TotalAvailablePoints = assignmentTotalPoints, DueDate = assignmentDueDate
+                    });
+
+                    Console.WriteLine("Add more courses? (Y/N)");
+                    assignmentResponse = Console.ReadLine() ?? "N";
+                    if (assignmentResponse.Equals("N", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        continueAdding = false;
+                    }
+                }
+            }
 
             bool isNewCourse = false;
             if (selectedCourse == null)
@@ -70,6 +107,8 @@ namespace App.LearningManagement.Helpers
             selectedCourse.Description = description;
             selectedCourse.Roster = new List<Person>();
             selectedCourse.Roster.AddRange(roster);
+            selectedCourse.Assignments = new List<Assignment>();
+            selectedCourse.Assignments.AddRange(assignments);
 
             if (isNewCourse)
             {
