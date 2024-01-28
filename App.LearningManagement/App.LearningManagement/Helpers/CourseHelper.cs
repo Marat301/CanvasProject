@@ -1,105 +1,111 @@
 ﻿using Library.LearningManagement.Models;
 using Library.LearningManagement.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
-namespace App.LearningManagement.Helpers
-{
-    public class CourseHelper
-    {
+namespace App.LearningManagement.Helpers {
+    public class CourseHelper {
         private CourseService courseService;
         private StudentService studentService;
 
-        public CourseHelper()
-        {
+        // use the current services (singleton implementation)
+        public CourseHelper() {
             studentService = StudentService.Current;
             courseService = CourseService.Current;
         }
-        public void CreateCourseRecord(Course? selectedCourse = null)
-        {
+
+        // creates a course
+        public void CreateCourseRecord(Course? selectedCourse = null) {
+            // get the name of the course
             Console.WriteLine("What is the name for the course?");
             var name = Console.ReadLine() ?? string.Empty;
 
+            // get the code of the course
             Console.WriteLine("What is the code for the course?");
             var code = Console.ReadLine() ?? string.Empty;
 
+            // get the description of the course
             Console.WriteLine("What is the description of the course?");
             var description = Console.ReadLine() ?? string.Empty;
 
+            // add students to the course
             Console.WriteLine("Which students (ID) should be enrolled in this course? ('Q' to Quit)");
             var roster = new List<Person>();
             bool continueAdding = true;
-            while (continueAdding)
-            {
-                studentService.Students.Where(s => !roster.Any(s2 => s2.ID == s.ID)).ToList().ForEach(Console.WriteLine);
+            while (continueAdding) {
+                // find and print all students who aren't enrolled yet
+                studentService.Students.Where(
+                    student => !roster.Any(enrolledStudent => enrolledStudent.ID == student.ID)
+                ).ToList().ForEach(Console.WriteLine);
+
                 var selection = "Q";
-                if (studentService.Students.Any(s => !roster.Any(s2 => s2.ID == s.ID)))
-                {
+                // let the user pick another student if there are still students unenrolled in the course
+                if (studentService.Students.Any(student => !roster.Any(enrolledStudent => enrolledStudent.ID == student.ID))) {
                     selection = Console.ReadLine() ?? string.Empty;
                 }
 
-                if (selection.Equals("Q", StringComparison.InvariantCultureIgnoreCase))
-                {
+                if (selection.Equals("Q", StringComparison.InvariantCultureIgnoreCase)) {
+                    // if no more students or user enters 'Q', quit
                     continueAdding = false;
-                } else
-                {
+                } else {
                     var selectedID = int.Parse(selection);
-                    var selectedStudent = studentService.Students.FirstOrDefault(s => s.ID == selectedID);
+                    // find the student with the given ID
+                    var selectedStudent = studentService.Students.FirstOrDefault(student => student.ID == selectedID);
 
-                    if (selectedStudent != null)
-                    {
+                    // add the student to the course
+                    if (selectedStudent != null) {
                         roster.Add(selectedStudent);
                     }
                 }
             }
 
-
-            bool isNewCourse = false;
-            if (selectedCourse == null)
-            {
-                isNewCourse = true;
+            // check if we are updating or creating a course
+            bool isNewCourse = selectedCourse == null;
+            if (isNewCourse) {
                 selectedCourse = new Course();
             }
 
+            // set the course data
             selectedCourse.Code = code;
             selectedCourse.Name = name;
             selectedCourse.Description = description;
             selectedCourse.Roster = new List<Person>();
             selectedCourse.Roster.AddRange(roster);
 
-            if (isNewCourse)
-            {
+            // add the course
+            if (isNewCourse) {
                 courseService.Add(selectedCourse);
             }
         }
 
-        public void UpdateCourseRecord()
-        {
+        // updates a course
+        public void UpdateCourseRecord() {
             Console.WriteLine("Enter the course code to update");
             ListCourses();
 
             var selection = Console.ReadLine();
 
-            var selectedCourse = courseService.Courses.FirstOrDefault(s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
-            if (selectedCourse != null)
-            {
+            // get course whose ID matches given ID
+            var selectedCourse = courseService.Courses.FirstOrDefault(
+                course => course.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase)
+            );
+
+            // reset all the course's data
+            if (selectedCourse != null) {
                 CreateCourseRecord(selectedCourse);
             }
         }
-        public void ListCourses()
-        {
+
+        // prints list of all courses
+        public void ListCourses() {
             courseService.Courses.ForEach(Console.WriteLine);
         }
 
-        public void SearchCourses()
-        {
-            Console.WriteLine("Enter the course: ");
+        // search for course and print all their data
+        public void SearchCourses() {
+            // get the name, description, or course of the code
+            Console.WriteLine("Enter the course name, description, or code: ");
             var query = Console.ReadLine() ?? string.Empty;
 
+            // find and print the course
             courseService.Search(query).ToList().ForEach(Console.WriteLine);
         }
     }

@@ -1,9 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Library.LearningManagement.Models {
     public class Course {
         public string Code { get; set; }
@@ -22,8 +18,7 @@ namespace Library.LearningManagement.Models {
             Modules = new List<Module>();
         }
 
-        public override string ToString()
-        {
+        public override string ToString() {
             return $"{Code} - {Name}";
         }
     }
