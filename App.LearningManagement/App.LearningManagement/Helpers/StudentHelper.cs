@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace App.LearningManagement.Helpers
 {
-    internal class StudentHelper
+    public class StudentHelper
     {
         private StudentService studentService = new StudentService();
         public void CreateStudentRecord(Person selectedStudent = null)
@@ -52,7 +52,7 @@ namespace App.LearningManagement.Helpers
 
         public void UpdateStudentRecord()
         {
-            Console.WriteLine("Select the student to update");
+            Console.WriteLine("What is the ID of the student?");
             ListStudents();
 
             var selectionStr = Console.ReadLine();
@@ -74,7 +74,7 @@ namespace App.LearningManagement.Helpers
 
         public void SearchStudents()
         {
-            Console.WriteLine("Enter a query: ");
+            Console.WriteLine("What is the ID of the student?");
             var query = Console.ReadLine() ?? string.Empty;
 
             studentService.Search(query).ToList().ForEach(Console.WriteLine);
