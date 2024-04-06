@@ -121,7 +121,7 @@ namespace App.LearningManagement.Helpers {
         // updates a course
         public void UpdateCourseRecord() {
             Console.WriteLine("Enter the course code to update");
-            ListCourses();
+            SearchCourses();
 
             var selection = Console.ReadLine();
 
@@ -136,19 +136,24 @@ namespace App.LearningManagement.Helpers {
             }
         }
 
-        // prints list of all courses
-        public void ListCourses() {
-            courseService.Courses.ForEach(Console.WriteLine);
-        }
-
         // search for course and print all their data
-        public void SearchCourses() {
-            // get the name, description, or course of the code
-            Console.WriteLine("Enter the course name, description, or code: ");
-            var query = Console.ReadLine() ?? string.Empty;
+        public void SearchCourses(string? query = null) {
+            if (string.IsNullOrEmpty(query)) {
+                courseService.Courses.ForEach(Console.WriteLine);
+            } else {
+                // find and print the course
+                courseService.Search(query).ToList().ForEach(Console.WriteLine);
+            }
 
-            // find and print the course
-            courseService.Search(query).ToList().ForEach(Console.WriteLine);
+            Console.WriteLine("Select a course:");
+            var code = Console.ReadLine() ?? string.Empty;
+
+            var selectedCourse = courseService.Courses.FirstOrDefault(c => c.Code.Equals(code, StringComparison.InvariantCultureIgnoreCase));
+
+            if (selectedCourse != null) {
+                Console.WriteLine(selectedCourse.DetailDisplay);
+            }
+
         }
     }
 }

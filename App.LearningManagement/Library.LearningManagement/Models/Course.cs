@@ -21,5 +21,13 @@ namespace Library.LearningManagement.Models {
         public override string ToString() {
             return $"{Code} - {Name}";
         }
+            // adding a detailed display for the end users
+        public string DetailDisplay {
+            get {
+                return $"{ToString()}\n{Description}\n\n" + 
+                    $"Roster:\n{string.Join<string>("\n", Roster.Select(s => s.ToString()).ToArray())}\n\n" +
+                    $"Assignments:\n{string.Join<string>("\n", Assignments.Select(a => a.ToString()).ToArray())}";
+            }
+        }
     }
 }

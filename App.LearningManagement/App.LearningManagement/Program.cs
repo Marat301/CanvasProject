@@ -33,9 +33,12 @@ namespace CanvasProject {
                     } else if (result == 5) {
                         courseHelper.CreateCourseRecord();
                     } else if (result == 6) {
-                        courseHelper.ListCourses();
-                    } else if (result == 7) {
                         courseHelper.SearchCourses();
+                    } else if (result == 7) {
+                        // get the name, description, or course of the code
+                        Console.WriteLine("Enter the course name, description, or code: ");
+                        var query = Console.ReadLine() ?? string.Empty;
+                        courseHelper.SearchCourses(query);
                     } else if (result == 8) {
                         courseHelper.UpdateCourseRecord();
                     }
