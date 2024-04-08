@@ -13,7 +13,7 @@ namespace App.LearningManagement.Helpers {
         }
 
         // creates a student
-        public void CreateStudentRecord(Person? selectedStudent = null) {
+        public void CreateStudentRecord(Student? selectedStudent = null) {
             // get the name of the student
             Console.WriteLine("What is the name of the student?");
             var name = Console.ReadLine();
@@ -41,7 +41,7 @@ namespace App.LearningManagement.Helpers {
             // check if we are updating or creating a student
             bool isCreate = selectedStudent == null;
             if (isCreate) {
-                selectedStudent = new Person();
+                selectedStudent = new Student();
             }
 
             // set the student data

@@ -2,12 +2,12 @@
 
 namespace Library.LearningManagement.Services {
     public class StudentService {
-        private List<Person> studentList;
+        private List<Student> studentList;
         private static StudentService _instance;
 
         // initializes StudentService
         private StudentService() {
-            studentList = new List<Person>();
+            studentList = new List<Student>();
         }
 
         // singleton to make sure we only have one StudentService
@@ -22,19 +22,19 @@ namespace Library.LearningManagement.Services {
         }
 
         // adds a student to the list
-        public void Add(Person student) {   
+        public void Add(Student student) {   
             studentList.Add(student);
         }
 
         // returns the list of students
-        public List<Person> Students {
+        public List<Student> Students {
             get {
                 return studentList;
             }
         }
 
         // returns all students which contain query in name
-        public IEnumerable<Person> Search(string query) {
+        public IEnumerable<Student> Search(string query) {
             return studentList.Where(student => student.Name.ToUpper().Contains(query.ToUpper()));
         }
     }
