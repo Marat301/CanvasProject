@@ -17,4 +17,8 @@ namespace Library.LearningManagement.Models {
             return $"[{ID}]{Name} - {Classification}";
         }
     }
+
+    public enum PersonClassification {
+        Freshman, Sophomore, Junior, Senior
+    }
 }
