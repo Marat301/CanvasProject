@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Library.LearningManagement.Models {
     public class AssignmentGroup {
         public List<Assignment> Assignments { get; set; }
-        public int Id { get; private set; }
-        private static int lastId;
+        public int ID { get; private set; }
+        private static int lastID;
 
         public string Name { get; set; }
 
@@ -28,11 +28,11 @@ namespace Library.LearningManagement.Models {
             Name = string.Empty;
             Weight = 1;
 
-            Id = ++lastId;
+            ID = ++lastID;
         }
 
         public override string ToString() {
-            return $"[{Id}] {Name} ({Weight}%)\n{string.Join("\n", Assignments.Select(s => s.ToString()).ToArray())}";
+            return $"[{ID}] {Name} ({Weight}%)\n{string.Join("\n", Assignments.Select(s => s.ToString()).ToArray())}";
         }
     }
 }

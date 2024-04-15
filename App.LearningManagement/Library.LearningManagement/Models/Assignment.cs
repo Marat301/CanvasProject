@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Library.LearningManagement.Models {
     public class Assignment {
         private static int lastId = 0;
-        public int Id {
+        public int ID {
             get; private set;
         }
         public string? Name { get; set; }
@@ -16,11 +16,11 @@ namespace Library.LearningManagement.Models {
         public DateTime DueDate { get; set; }
 
         public Assignment() {
-            Id = ++lastId;
+            ID = ++lastId;
         }
 
         public override string ToString() {
-            return $"{Id}. ({DueDate}) {Name}";
+            return $"{ID}. ({DueDate}) {Name}";
         }
     }
 }
