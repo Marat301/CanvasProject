@@ -513,11 +513,12 @@ namespace App.LearningManagement.Helpers {
             };
         }
 
-        // updates the selected announcement in the selected course
+        // updates the selected announcement from the selected course
         public void UpdateAnnouncement() {
             Console.WriteLine("Enter the course code:");
             courseService.Courses.ForEach(Console.WriteLine);
             var selection = Console.ReadLine();
+
             var selectedCourse = courseService.Courses.FirstOrDefault
                 (s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
 
@@ -540,5 +541,286 @@ namespace App.LearningManagement.Helpers {
             }
         }
 
+        // removes the selected announcement from the selected course
+        public void RemoveAnnouncement() {
+            Console.WriteLine("Enter the course code:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            var selection = Console.ReadLine();
+
+            var selectedCourse = courseService.Courses.FirstOrDefault
+                (s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
+
+            if (selectedCourse != null) {
+                Console.WriteLine("Choose an announcement to delete:");
+                selectedCourse.Announcements.ForEach(Console.WriteLine);
+
+                var selectionStr = Console.ReadLine() ?? string.Empty;
+                var selectionInt = int.Parse(selectionStr);
+                var selectedAnnouncement = selectedCourse.Announcements.FirstOrDefault
+                    (a => a.ID == selectionInt);
+
+                if (selectedAnnouncement != null) {
+                    selectedCourse.Announcements.Remove(selectedAnnouncement);
+                }
+            }
+        }
+
+        // creates a module
+        private Module CreateModule(Course c) {
+            // name for the module
+            Console.WriteLine("Name:");
+            var name = Console.ReadLine() ?? string.Empty;
+
+            // description for the module
+            Console.WriteLine("Description:");
+            var description = Console.ReadLine() ?? string.Empty;
+
+            var module = new Module {
+                Name = name,
+                Description = description
+            };
+
+            Console.WriteLine("Would you like to add content?");
+            var choice = Console.ReadLine() ?? "N";
+            while (choice.Equals("Y", StringComparison.InvariantCultureIgnoreCase)) {
+                Console.WriteLine("What type of content would you like to add?");
+                Console.WriteLine("1. Assignment");
+                Console.WriteLine("2. File");
+                Console.WriteLine("3. Page");
+                var contentChoice = int.Parse(Console.ReadLine() ?? "0");
+
+                switch (contentChoice) {
+                    case 1:
+                        var newAssignmentContent = CreateAssignmentItem(c);
+                        if (newAssignmentContent != null) {
+                            module.Content.Add(newAssignmentContent);
+                        }
+                        break;
+                    case 2:
+                        var newFileContent = CreateFileItem(c);
+                        if (newFileContent != null) {
+                            module.Content.Add(newFileContent);
+                        }
+                        break;
+                    case 3:
+                        var newPageContent = CreatePageItem(c);
+                        if (newPageContent != null) {
+                            module.Content.Add(newPageContent);
+                        }
+                        break;
+                    default:
+                        break;
+                }
+
+                Console.WriteLine("Would you like to add more content?");
+                choice = Console.ReadLine() ?? "N";
+            }
+
+            return module;
+        }
+
+        // creates an assignment item
+        private AssignmentItem? CreateAssignmentItem(Course c) {
+            // name for the assignment
+            Console.WriteLine("Name:");
+            var name = Console.ReadLine() ?? string.Empty;
+
+            // description for the assignment
+            Console.WriteLine("Description:");
+            var description = Console.ReadLine() ?? string.Empty;
+
+            Console.WriteLine("Which assignment should be added?");
+            c.Assignments.ToList().ForEach(Console.WriteLine);
+            var choice = int.Parse(Console.ReadLine() ?? "-1");
+
+            if (choice >= 0) {
+                var assignment = c.Assignments.FirstOrDefault
+                    (a => a.ID == choice);
+
+                return new AssignmentItem {
+                    Assignment = assignment,
+                    Name = name,
+                    Description = description
+                };
+            }
+            return null;
+        }
+
+        // creates a file item
+        private FileItem? CreateFileItem(Course c) {
+            // name for the file
+            Console.WriteLine("Name:");
+            var name = Console.ReadLine() ?? string.Empty;
+            // description for the file
+            Console.WriteLine("Description:");
+            var description = Console.ReadLine() ?? string.Empty;
+
+            Console.WriteLine("Enter a path to the file:");
+            var filepath = Console.ReadLine();
+
+            return new FileItem {
+                Name = name,
+                Description = description,
+                Path = filepath
+            };
+        }
+
+        // creates a page item
+        private PageItem? CreatePageItem(Course c) {
+            // name for the page item
+            Console.WriteLine("Name:");
+            var name = Console.ReadLine() ?? string.Empty;
+
+            // description for the page item
+            Console.WriteLine("Description:");
+            var description = Console.ReadLine() ?? string.Empty;
+
+            Console.WriteLine("Enter page content:");
+            var body = Console.ReadLine();
+
+            return new PageItem {
+                Name = name,
+                Description = description,
+                htmlBody = body
+            };
+        }
+
+        // creates an assignment
+        private Assignment CreateAssignment() {
+            // name of the assignment
+            Console.WriteLine("Name:");
+            var assignmentName = Console.ReadLine() ?? string.Empty;
+
+            // description of the assignment
+            Console.WriteLine("Description:");
+            var assignmentDescription = Console.ReadLine() ?? string.Empty;
+
+            // total points for the assigment
+            Console.WriteLine("Total Points:");
+            var totalPoints = decimal.Parse(Console.ReadLine() ?? "100");
+
+            // due date for the assignment
+            Console.WriteLine("Due Date:");
+            var dueDate = DateTime.Parse(Console.ReadLine() ?? "01/01/1900");
+
+            return new Assignment {
+                Name = assignmentName,
+                Description = assignmentDescription,
+                TotalAvailablePoints = totalPoints,
+                DueDate = dueDate
+            };
+        }
+
+        // creates a submission
+        public void CreateSubmission(Course c, Student? student, Assignment? assignment) {
+            if (student == null || assignment == null) {
+                return;
+            }
+
+            Console.WriteLine("What is the content of the submission?");
+            var content = Console.ReadLine();
+            c.Submissions.Add(
+                new Submission {
+                    Student = student,
+                    Assignment = assignment,
+                    Content = content ?? string.Empty
+                }
+            );
+        }
+
+        // lists the submissions of the selected course
+        public void ListSubmissions() {
+            Console.WriteLine("Enter the course code that you would like to add the assignment to:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            var selection = Console.ReadLine();
+
+            var selectedCourse = courseService.Courses.FirstOrDefault
+                (s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
+
+            if (selectedCourse != null) {
+                selectedCourse.Submissions.ForEach(Console.WriteLine);
+            }
+        }
+
+        // removes a submission from the selected course
+        public void RemoveSubmission() {
+            Console.WriteLine("Enter the course code that you would like to add the assignment to:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            var selection = Console.ReadLine();
+
+            var selectedCourse = courseService.Courses.FirstOrDefault
+                (s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
+
+            if (selectedCourse != null) {
+                selectedCourse.Submissions.ForEach(Console.WriteLine);
+                var selectedId = int.Parse(Console.ReadLine() ?? "0");
+
+                var selectedSubmission = selectedCourse.Submissions.FirstOrDefault(s => s.ID == selectedId);
+                if (selectedSubmission != null) {
+                    selectedCourse.Submissions.Remove(selectedSubmission);
+                }
+            }
+        }
+
+        // updates a submission from the selected course
+        public void UpdateSubmission() {
+            Console.WriteLine("Enter the course code that you would like to add the assignment to:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            var selection = Console.ReadLine();
+
+            var selectedCourse = courseService.Courses.FirstOrDefault
+                (s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
+
+            if (selectedCourse != null) {
+                selectedCourse.Submissions.ForEach(Console.WriteLine);
+                var selectedId = int.Parse(Console.ReadLine() ?? "0");
+
+                Console.WriteLine("Enter new content:");
+                selectedCourse.Submissions.FirstOrDefault
+                    (s => s.ID == selectedId).Content = Console.ReadLine() ?? string.Empty;
+            }
+        }
+
+        // grades a submission from the selected course
+        public void GradeSubmission() {
+            Console.WriteLine("Enter the course code that you would like to add the assignment to:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            var selection = Console.ReadLine();
+
+            var selectedCourse = courseService.Courses.FirstOrDefault
+                (s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
+
+            if (selectedCourse != null) {
+                selectedCourse.Submissions.ForEach(Console.WriteLine);
+                var selectedId = int.Parse(Console.ReadLine() ?? "0");
+
+                Console.WriteLine("Enter grade:");
+                selectedCourse.Submissions.FirstOrDefault
+                    (s => s.Id == selectedId).Grade = decimal.Parse(Console.ReadLine() ?? "0");
+            }
+        }
+
+        // gets the student grade from the selected course.
+        public void GetStudentGrade() {
+            Console.WriteLine("Enter the course code that you would like to add the assignment to:");
+            courseService.Courses.ForEach(Console.WriteLine);
+            var selection = Console.ReadLine();
+
+            var selectedCourse = courseService.Courses.FirstOrDefault
+                (s => s.Code.Equals(selection, StringComparison.InvariantCultureIgnoreCase));
+
+            if (selectedCourse != null) {
+                Console.WriteLine("Enter the id for the student:");
+                selectedCourse.Roster.Where
+                    (r => r is Student).ToList().ForEach(Console.WriteLine);
+
+                var selectedStudentId = int.Parse(Console.ReadLine() ?? "0");
+                var weightedAverage = courseService.GetWeightedGrade(selectedCourse.ID, selectedStudentId);
+
+                Console.WriteLine($"Student Grade: ({courseService.GetLetterGrade(weightedAverage)}) {weightedAverage}");
+
+            }
+
+        }
     }
 }
