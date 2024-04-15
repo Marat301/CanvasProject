@@ -7,5 +7,6 @@ using System.Threading.Tasks;
 namespace Library.LearningManagement.Models {
     public class PageItem : ContentItem {
         public string? htmlBody { get; set; }
+
     }
 }

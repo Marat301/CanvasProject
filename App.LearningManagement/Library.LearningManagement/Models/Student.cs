@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Library.LearningManagement.Models {
     public class Student : Person {
         public Dictionary<int, double> Grades { get; set; }
+
         public PersonClassification Classification { get; set; }
 
         public Student() {
@@ -14,7 +15,7 @@ namespace Library.LearningManagement.Models {
         }
 
         public override string ToString() {
-            return $"[{ID}]{Name} - {Classification}";
+            return $"[{ID}] {Name} - {Classification}";
         }
     }
 

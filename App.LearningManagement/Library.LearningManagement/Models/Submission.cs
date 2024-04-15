@@ -5,20 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Library.LearningManagement.Models {
-    public class Announcement {
+    public class Submission {
         private static int lastID = 0;
-        public string? Name { get; set; }
-        public string? Description { get; set; }
         public int ID {
             get; private set;
         }
 
-        public Announcement() {
+        public Student Student { get; set; }
+        public Assignment Assignment { get; set; }
+        public string Content { get; set; }
+
+        public decimal Grade { get; set; }
+
+        public Submission() {
             ID = ++lastID;
+            Content = string.Empty;
         }
 
         public override string ToString() {
-            return $"[{ID}] {Name}: {Description}";
+            return $"[{ID}] ({Grade}) {Student.Name}: {Assignment.Name}";
         }
     }
 }
