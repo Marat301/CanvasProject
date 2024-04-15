@@ -31,7 +31,7 @@ namespace App.LearningManagement.Helpers {
 
             if (choice.Equals("Y", StringComparison.InvariantCultureIgnoreCase)) {
                 Console.WriteLine("What is the code for the course?");
-                selectedCourse.Code = Console.ReadLine() ?? string.Empty;
+                selectedCourse.Prefix = Console.ReadLine() ?? string.Empty;
             }
 
             // Get course name
@@ -217,7 +217,7 @@ namespace App.LearningManagement.Helpers {
                     newGroup.Assignments.Add(CreateAssignment());
                     selectedCourse.AssignmentGroups.Add(newGroup);
                 } else if (selectionInt != 0) {
-                    var selectedGroup = selectedCourse.AssignmentGroups.FirstOrDefault(g => g.Id == selectionInt);
+                    var selectedGroup = selectedCourse.AssignmentGroups.FirstOrDefault(g => g.ID == selectionInt);
                     if (selectedGroup != null) {
                         selectedGroup.Assignments.Add(CreateAssignment());
                     }
@@ -323,7 +323,7 @@ namespace App.LearningManagement.Helpers {
 
                             var contentToRemove = selectedModule
                                 .Content
-                                .FirstOrDefault(c => c.Id.ToString().Equals(selection, StringComparison.InvariantCultureIgnoreCase));
+                                .FirstOrDefault(c => c.ID.ToString().Equals(selection, StringComparison.InvariantCultureIgnoreCase));
                             if (contentToRemove != null) {
                                 selectedModule.Content.Remove(contentToRemove);
                             }
@@ -796,7 +796,7 @@ namespace App.LearningManagement.Helpers {
 
                 Console.WriteLine("Enter grade:");
                 selectedCourse.Submissions.FirstOrDefault
-                    (s => s.Id == selectedId).Grade = decimal.Parse(Console.ReadLine() ?? "0");
+                    (s => s.ID == selectedId).Grade = decimal.Parse(Console.ReadLine() ?? "0");
             }
         }
 
