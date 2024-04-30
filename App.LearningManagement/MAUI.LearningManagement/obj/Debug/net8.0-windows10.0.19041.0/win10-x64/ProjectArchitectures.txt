@@ -1,0 +1,1 @@
+C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\MAUI.LearningManagement.csproj;x64

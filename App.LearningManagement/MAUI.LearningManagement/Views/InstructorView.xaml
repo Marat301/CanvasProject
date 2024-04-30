@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.LearningManagement.Views.InstructorView"
+             Title="InstructorView"
+             NavigatedTo="ContentPage_NavigatedTo"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Enrollments"
+            Clicked="Toolbar_EnrollmentsClicked"
+            />
+        <ToolbarItem
+            Text="Courses"
+            Clicked="Toolbar_CoursesClicked"
+           />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout
+        Padding="100,0"
+        Spacing="10"
+        VerticalOptions="Center">
+
+        <!--ENROLLMENTS-->
+        <VerticalStackLayout IsVisible="{Binding IsEnrollmentsVisible}"
+            Padding="100,0"
+            Spacing="10"
+            VerticalOptions="Center">
+
+            <SearchBar
+            Text="{Binding Query, Mode=TwoWay}"
+            ></SearchBar>
+
+            <Label 
+                Text="Enrollments"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <ListView
+                ItemsSource="{Binding People}"
+                SelectedItem="{Binding SelectedPerson}">
+            </ListView>
+            
+            <Button 
+                Text="Add Enrollment"
+                Clicked="AddEnrollmentClick"
+                />
+            
+            <Button
+                Text="Edit Enrollment"
+                Clicked="EditEnrollmentClick"
+                />
+            
+            <Button
+                Text="Remove Enrollment"
+                Clicked="RemoveEnrollmentClick"
+                />
+
+            <Button
+                Text="Cancel"
+                Clicked="CancelClicked"
+                />
+        </VerticalStackLayout>
+        
+        <!--COURSES-->
+        <VerticalStackLayout IsVisible="{Binding IsCoursesVisible}"
+            Padding="100,0"
+            Spacing="10"
+            VerticalOptions="Center">
+            
+            <Label 
+                Text="Courses"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            
+            <ListView
+                ItemsSource="{Binding Courses}"
+                SelectedItem="{Binding SelectedCourse}">
+            </ListView>
+            
+            <Button 
+                Text="Add Course"
+                Clicked="AddCourseClick"
+                />
+            
+            <Button
+                Text="Edit Course"
+                
+                />
+            
+            <Button
+                Text="Remove Course"
+                
+                />
+
+            <Button
+                Text="Cancel"
+                Clicked="CancelClicked"
+                />
+        </VerticalStackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>

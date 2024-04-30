@@ -773,11 +773,12 @@ namespace App.LearningManagement.Helpers {
 
             if (selectedCourse != null) {
                 selectedCourse.Submissions.ForEach(Console.WriteLine);
-                var selectedId = int.Parse(Console.ReadLine() ?? "0");
+                var selectedID = int.Parse(Console.ReadLine() ?? "0");
 
                 Console.WriteLine("Enter new content:");
+
                 selectedCourse.Submissions.FirstOrDefault
-                    (s => s.ID == selectedId).Content = Console.ReadLine() ?? string.Empty;
+                (s => s.ID == selectedID).Content = Console.ReadLine() ?? string.Empty;
             }
         }
 

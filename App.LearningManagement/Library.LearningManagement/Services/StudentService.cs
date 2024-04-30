@@ -3,7 +3,7 @@ using Library.LearningManagement.Models;
 
 namespace Library.LearningManagement.Services {
     public class StudentService {
-        private static StudentService _instance;
+        private static StudentService? _instance;
 
         public IEnumerable<Student> Students {
             get {
@@ -30,7 +30,7 @@ namespace Library.LearningManagement.Services {
         }
 
         // adds a student to the list
-        public void Add(Student student) {
+        public void Add(Person student) {
             FakeDatabase.People.Add(student);
         }
 
@@ -40,7 +40,7 @@ namespace Library.LearningManagement.Services {
         }
 
         // finds the student by ID
-        public Person? GetById(int ID) {
+        public Person? GetByID(int ID) {
             return FakeDatabase.People.FirstOrDefault(p => p.ID == ID);
         }
 

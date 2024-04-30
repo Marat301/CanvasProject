@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.LearningManagement.Views.StudentView"
+             Title="StudentView">
+    <VerticalStackLayout
+        Padding="100,0"
+        Spacing="10"
+        VerticalOptions="Center">
+        
+        <Label 
+            Text="Options"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            Text="Cancel"
+            Clicked="CancelClicked" />
+    </VerticalStackLayout>
+</ContentPage>
