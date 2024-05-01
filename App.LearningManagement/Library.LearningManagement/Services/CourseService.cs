@@ -26,6 +26,11 @@ namespace Library.LearningManagement.Services {
             FakeDatabase.Courses.Add(course);
         }
 
+        // removes a course from the list
+        public void Remove(Course course) {
+            FakeDatabase.Courses.Remove(course);
+        }
+
         // returns the list of courses
         public List<Course> Courses {
             get {

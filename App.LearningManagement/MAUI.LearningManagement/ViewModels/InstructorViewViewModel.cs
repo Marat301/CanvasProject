@@ -75,23 +75,35 @@ namespace MAUI.LearningManagement.ViewModels {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public void EditEnrollmentClick(Shell s) {
-            var idParam = SelectedPerson?.ID ?? 0;
-            s.GoToAsync($"//PersonDetail?personId={idParam}");
-        }
-
         public void AddEnrollmentClick(Shell s) {
             s.GoToAsync($"//PersonDetail?personId=0");
         }
 
-        public void AddCourseClick(Shell s) {
-            s.GoToAsync($"//CourseDetail");
+        public void EditEnrollmentClick(Shell s) {
+            var idParam = SelectedPerson?.ID ?? 0;
+            s.GoToAsync($"//PersonDetail?personId={idParam}");
         }
 
         public void RemoveEnrollmentClick() {
             if (SelectedPerson == null) { return; }
 
             StudentService.Current.Remove(SelectedPerson);
+            RefreshView();
+        }
+
+        public void AddCourseClick(Shell s) {
+            s.GoToAsync($"//CourseDetail");
+        }
+
+        public void EditCourseClick(Shell s) {
+            var codeParam = SelectedCourse?.Code;
+            s.GoToAsync($"//CourseDetail?courseCode={codeParam}");
+        }
+
+        public void RemoveCourseClick() {
+            if (SelectedCourse == null) { return; }
+
+            CourseService.Current.Remove(SelectedCourse);
             RefreshView();
         }
 

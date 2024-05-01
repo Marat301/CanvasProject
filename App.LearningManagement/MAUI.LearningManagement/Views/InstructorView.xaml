@@ -68,7 +68,11 @@
             Padding="100,0"
             Spacing="10"
             VerticalOptions="Center">
-            
+
+            <SearchBar
+                Text="{Binding Query, Mode=TwoWay}"
+            ></SearchBar>
+
             <Label 
                 Text="Courses"
                 VerticalOptions="Center" 
@@ -86,12 +90,12 @@
             
             <Button
                 Text="Edit Course"
-                
+                Clicked="EditCourseClick"
                 />
             
             <Button
                 Text="Remove Course"
-                
+                Clicked="RemoveCourseClick"
                 />
 
             <Button

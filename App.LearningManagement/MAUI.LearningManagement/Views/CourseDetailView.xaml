@@ -2,7 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI.LearningManagement.Views.CourseDetailView"
-             Title="CourseDetailView">
+             Title="CourseDetailView"
+             NavigatedFrom="OnLeaving"
+             NavigatedTo="OnArriving"
+             >
     <VerticalStackLayout
         Padding="100,0"
         Spacing="10"
@@ -46,8 +49,12 @@
         <Label 
             Text="Description"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Entry Text="{Binding Path=Description, Mode=TwoWay}"></Entry>
+            HorizontalOptions="Start" />
+        <Entry 
+            Text="{Binding Path=Description, Mode=TwoWay}"
+            Grid.Row="1"
+            Grid.Column="1"
+        ></Entry>
 
         <!--STUDENT ROSTER-->
         <Grid>

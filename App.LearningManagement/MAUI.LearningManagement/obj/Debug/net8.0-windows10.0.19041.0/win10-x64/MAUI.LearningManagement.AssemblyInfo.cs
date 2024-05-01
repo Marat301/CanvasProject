@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MAUI.LearningManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+19c258ce4c9349de538e4bd81bf19ace20354420")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3346885cda32aa3fcfa5f7083325081375e031fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("MAUI.LearningManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MAUI.LearningManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

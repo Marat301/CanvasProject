@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-30T06:15:49.458</Modified>
+      <Modified>2024-05-01T06:48:13.992</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-30T01:42:09.535</Modified>
+      <Modified>2024-05-01T06:48:13.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MAUI.LearningManagement.runtimeconfig.json">
       <PackagePath>MAUI.LearningManagement.runtimeconfig.json</PackagePath>
-      <Modified>2024-04-30T01:38:01.208</Modified>
+      <Modified>2024-05-01T05:16:16.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MAUI.LearningManagement.dll">
       <PackagePath>MAUI.LearningManagement.dll</PackagePath>
-      <Modified>2024-04-30T06:15:48.487</Modified>
+      <Modified>2024-05-01T06:48:13.641</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MAUI.LearningManagement.exe</PackagePath>
-      <Modified>2024-04-30T06:15:48.559</Modified>
+      <Modified>2024-05-01T06:48:13.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -56,23 +56,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:29:58.974</Modified>
+      <Modified>2024-05-01T05:13:34.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:29:58.987</Modified>
+      <Modified>2024-05-01T05:13:34.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:29:59.006</Modified>
+      <Modified>2024-05-01T05:13:34.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:29:59.037</Modified>
+      <Modified>2024-05-01T05:13:34.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:29:59.154</Modified>
+      <Modified>2024-05-01T05:13:35.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -84,211 +84,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-04-30T01:30:00.120</Modified>
+      <Modified>2024-05-01T05:13:35.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.603</Modified>
+      <Modified>2024-05-01T05:13:36.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.622</Modified>
+      <Modified>2024-05-01T05:13:36.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.638</Modified>
+      <Modified>2024-05-01T05:13:36.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.666</Modified>
+      <Modified>2024-05-01T05:13:36.426</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.771</Modified>
+      <Modified>2024-05-01T05:13:36.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.250</Modified>
+      <Modified>2024-05-01T05:13:36.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.256</Modified>
+      <Modified>2024-05-01T05:13:36.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.288</Modified>
+      <Modified>2024-05-01T05:13:36.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.263</Modified>
+      <Modified>2024-05-01T05:13:36.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.272</Modified>
+      <Modified>2024-05-01T05:13:36.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.201</Modified>
+      <Modified>2024-05-01T05:13:36.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.206</Modified>
+      <Modified>2024-05-01T05:13:36.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.238</Modified>
+      <Modified>2024-05-01T05:13:36.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.212</Modified>
+      <Modified>2024-05-01T05:13:36.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.218</Modified>
+      <Modified>2024-05-01T05:13:36.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.132</Modified>
+      <Modified>2024-05-01T05:13:36.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.137</Modified>
+      <Modified>2024-05-01T05:13:36.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.143</Modified>
+      <Modified>2024-05-01T05:13:36.015</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.149</Modified>
+      <Modified>2024-05-01T05:13:36.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.158</Modified>
+      <Modified>2024-05-01T05:13:36.029</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.162</Modified>
+      <Modified>2024-05-01T05:13:36.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.168</Modified>
+      <Modified>2024-05-01T05:13:36.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.193</Modified>
+      <Modified>2024-05-01T05:13:36.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.174</Modified>
+      <Modified>2024-05-01T05:13:36.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.180</Modified>
+      <Modified>2024-05-01T05:13:36.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.388</Modified>
+      <Modified>2024-05-01T05:13:36.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.401</Modified>
+      <Modified>2024-05-01T05:13:36.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.417</Modified>
+      <Modified>2024-05-01T05:13:36.215</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.434</Modified>
+      <Modified>2024-05-01T05:13:36.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.470</Modified>
+      <Modified>2024-05-01T05:13:36.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.338</Modified>
+      <Modified>2024-05-01T05:13:36.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.345</Modified>
+      <Modified>2024-05-01T05:13:36.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.355</Modified>
+      <Modified>2024-05-01T05:13:36.173</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.364</Modified>
+      <Modified>2024-05-01T05:13:36.179</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.379</Modified>
+      <Modified>2024-05-01T05:13:36.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.296</Modified>
+      <Modified>2024-05-01T05:13:36.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.302</Modified>
+      <Modified>2024-05-01T05:13:36.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.308</Modified>
+      <Modified>2024-05-01T05:13:36.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.317</Modified>
+      <Modified>2024-05-01T05:13:36.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.329</Modified>
+      <Modified>2024-05-01T05:13:36.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.482</Modified>
+      <Modified>2024-05-01T05:13:36.260</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.496</Modified>
+      <Modified>2024-05-01T05:13:36.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.514</Modified>
+      <Modified>2024-05-01T05:13:36.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.538</Modified>
+      <Modified>2024-05-01T05:13:36.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.590</Modified>
+      <Modified>2024-05-01T05:13:36.351</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.120</Modified>
+      <Modified>2024-05-01T05:13:35.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.128</Modified>
+      <Modified>2024-05-01T05:13:36.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.140</Modified>
+      <Modified>2024-05-01T05:13:36.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.159</Modified>
+      <Modified>2024-05-01T05:13:36.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-04-30T01:30:00.236</Modified>
+      <Modified>2024-05-01T05:13:36.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MAUI.LearningManagement.deps.json">
       <PackagePath>MAUI.LearningManagement.deps.json</PackagePath>
-      <Modified>2024-04-30T01:42:09.493</Modified>
+      <Modified>2024-05-01T05:16:16.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -572,7 +572,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\Library.LearningManagement\bin\Debug\net8.0\Library.LearningManagement.dll">
       <PackagePath>Library.LearningManagement.dll</PackagePath>
-      <Modified>2024-04-30T01:29:47.764</Modified>
+      <Modified>2024-05-01T06:38:18.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\.nuget\packages\microsoft.maui.controls.compatibility\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
