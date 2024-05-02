@@ -11,7 +11,7 @@ namespace Library.LearningManagement.Services {
 
         private static AssignmentService? _instance;
 
-        // singleton to make sure we only have one module service
+        // singleton to make sure we only have one assignment service
         public static AssignmentService Current {
             get {
                 if (_instance == null) {

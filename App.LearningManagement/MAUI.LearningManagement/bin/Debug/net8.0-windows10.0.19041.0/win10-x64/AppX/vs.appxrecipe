@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-05-02T03:21:52.677</Modified>
+      <Modified>2024-05-02T03:40:16.187</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MAUI.LearningManagement.dll">
       <PackagePath>MAUI.LearningManagement.dll</PackagePath>
-      <Modified>2024-05-02T03:21:52.087</Modified>
+      <Modified>2024-05-02T03:40:15.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MAUI.LearningManagement.exe</PackagePath>
-      <Modified>2024-05-02T03:21:52.090</Modified>
+      <Modified>2024-05-02T03:40:15.357</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\MAUI.LearningManagement\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -572,7 +572,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\source\repos\CanvasProject\App.LearningManagement\Library.LearningManagement\bin\Debug\net8.0\Library.LearningManagement.dll">
       <PackagePath>Library.LearningManagement.dll</PackagePath>
-      <Modified>2024-05-02T03:20:19.463</Modified>
+      <Modified>2024-05-02T03:40:13.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marat\.nuget\packages\microsoft.maui.controls.compatibility\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
