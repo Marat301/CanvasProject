@@ -30,7 +30,12 @@ namespace MAUI.LearningManagement.ViewModels {
 
         public ObservableCollection<Course> Courses {
             get {
-                return new ObservableCollection<Course>(CourseService.Current.Courses);
+                var filteredList = CourseService
+                   .Current
+                   .Courses
+                   .Where(
+                   s => s.Name.ToUpper().Contains(Query?.ToUpper() ?? string.Empty));
+                return new ObservableCollection<Course>(filteredList);
             }
         }
 
@@ -44,21 +49,38 @@ namespace MAUI.LearningManagement.ViewModels {
             get; set;
         }
 
+        /*public bool IsModulesVisible {
+            get; set;
+        }*/
+
         public void ShowEnrollments() {
             IsEnrollmentsVisible = true;
             IsCoursesVisible = false;
+            //IsModulesVisible = false;
             NotifyPropertyChanged("IsEnrollmentsVisible");
             NotifyPropertyChanged("IsCoursesVisible");
+            //NotifyPropertyChanged("IsModulesVisible");
         }
 
         public void ShowCourses() {
             IsEnrollmentsVisible = false;
             IsCoursesVisible = true;
+            //IsModulesVisible = false;
             NotifyPropertyChanged("IsEnrollmentsVisible");
             NotifyPropertyChanged("IsCoursesVisible");
+            //NotifyPropertyChanged("IsModulesVisible");
         }
+        /*public void ShowModules() {
+            IsEnrollmentsVisible = false;
+            IsCoursesVisible = false;
+            IsModulesVisible = true;
+            NotifyPropertyChanged("IsEnrollmentsVisible");
+            NotifyPropertyChanged("IsCoursesVisible");
+            NotifyPropertyChanged("IsModulesVisible");
+        }*/
         public Person SelectedPerson { get; set; }
         public Course SelectedCourse { get; set; }
+        public Module SelectedModule { get; set; }
 
         private string query;
         public string Query {
@@ -96,8 +118,8 @@ namespace MAUI.LearningManagement.ViewModels {
         }
 
         public void EditCourseClick(Shell s) {
-            var codeParam = SelectedCourse?.Code;
-            s.GoToAsync($"//CourseDetail?courseCode={codeParam}");
+            var prefixParam = SelectedCourse?.Prefix;
+            s.GoToAsync($"//CourseDetail?coursePrefix={prefixParam}");
         }
 
         public void RemoveCourseClick() {
@@ -106,6 +128,8 @@ namespace MAUI.LearningManagement.ViewModels {
             CourseService.Current.Remove(SelectedCourse);
             RefreshView();
         }
+
+        
 
         public void ResetView() {
             Query = string.Empty;

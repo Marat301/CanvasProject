@@ -13,4 +13,16 @@ public partial class StudentView : ContentPage
     private void CancelClicked(object sender, EventArgs e) {
         Shell.Current.GoToAsync("//MainPage");
     }
+
+    private void CoursesClicked(object sender, EventArgs e) {
+        Shell.Current.GoToAsync("//Student");
+    }
+
+    private void AssignmentsClicked(object sender, EventArgs e) {
+        Shell.Current.GoToAsync("//Student");
+    }
+
+    private void GradesClicked(object sender, EventArgs e) {
+        Shell.Current.GoToAsync("//Student");
+    }
 }

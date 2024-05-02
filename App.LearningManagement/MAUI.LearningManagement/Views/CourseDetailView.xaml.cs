@@ -4,7 +4,7 @@ using MAUI.LearningManagement.ViewModels;
 
 namespace MAUI.LearningManagement.Views;
 
-[QueryProperty(nameof(courseCode), "courseCode")]
+[QueryProperty(nameof(coursePrefix), "coursePrefix")]
 
 public partial class CourseDetailView : ContentPage {
     public CourseDetailView() {
@@ -12,7 +12,7 @@ public partial class CourseDetailView : ContentPage {
         BindingContext = new CourseDetailViewModel();
     }
 
-    public int courseCode {
+    public string coursePrefix {
         set; get;
     }
 
@@ -27,7 +27,15 @@ public partial class CourseDetailView : ContentPage {
     private void CancelClicked(object sender, EventArgs e) {
         Shell.Current.GoToAsync("//Instructor");
     }
-    
+
+    private void AddModuleClick(object sender, EventArgs e) {
+        (BindingContext as CourseDetailViewModel).AddModuleClick(Shell.Current);
+    }
+
+    private void AddAssignmentClick(object sender, EventArgs e) {
+        (BindingContext as CourseDetailViewModel).AddAssignmentClick(Shell.Current);
+    }
+
     private void OkClicked(object sender, EventArgs e) {
         
         (BindingContext as CourseDetailViewModel).AddCourse(Shell.Current);

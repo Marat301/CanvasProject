@@ -5,6 +5,13 @@ namespace Library.LearningManagement.Services {
     public class CourseService {
         private static CourseService? _instance;
 
+       /* public IEnumerable<Course> Courses {
+            get {
+                return FakeDatabase.Courses.Where
+                    (p => p is Course).Select(p => p as Course);
+            }
+        }*/
+
         // singleton to make sure we only have one course service
         public static CourseService Current {
             get {
@@ -24,6 +31,11 @@ namespace Library.LearningManagement.Services {
         // adds a course to the list
         public void Add(Course course) {
             FakeDatabase.Courses.Add(course);
+        }
+
+        // finds the course by prefix
+        public Course? GetByPrefix(string Prefix) {
+            return FakeDatabase.Courses.FirstOrDefault(p => p.Prefix == Prefix);
         }
 
         // removes a course from the list

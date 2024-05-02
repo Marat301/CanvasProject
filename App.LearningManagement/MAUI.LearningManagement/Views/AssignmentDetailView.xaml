@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.LearningManagement.Views.AssignmentDetailView"
+             Title="AssignmentDetailView"
+             NavigatedFrom="OnLeaving"
+             NavigatedTo="OnArriving"
+             >
+    <VerticalStackLayout 
+        Padding="100,0"
+        Spacing="10"
+        VerticalOptions="Center">
+
+        <ListView
+            ItemsSource="{Binding Assignments}"
+            SelectedItem="{Binding SelectedAssignments}">
+        </ListView>
+
+        <Label 
+            Text="Name"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+            Grid.Row="0"
+            Grid.Column="0"
+        />
+        <Entry 
+            Text="{Binding Path=Name, Mode=TwoWay}"
+            Grid.Row="1"
+            Grid.Column="0"
+        ></Entry>
+
+        <Label 
+            Text="Description"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Entry 
+            Text="{Binding Path=Description, Mode=TwoWay}"
+            Grid.Row="1"
+            Grid.Column="1"
+        ></Entry>
+
+        <Label 
+            Text="Total Available Points"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Entry 
+            Text="{Binding Path=TotalAvailablePoints, Mode=TwoWay}"
+            Grid.Row="1"
+            Grid.Column="1"
+        ></Entry>
+
+        <Label 
+            Text="Due Date"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+        />
+        <Entry 
+            Text="{Binding Path=DueDate, Mode=TwoWay}"
+            Grid.Row="1"
+            Grid.Column="1"
+        ></Entry>
+
+        <Button 
+            Text="Ok"
+            Clicked="OkClicked"
+        />
+
+        <Button
+            Text="Cancel"
+            Clicked="CancelClicked"
+        />
+    </VerticalStackLayout>
+</ContentPage>

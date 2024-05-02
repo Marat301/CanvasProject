@@ -8,13 +8,13 @@ namespace Library.LearningManagement.Models {
     public class Course {
         public string Code {
             get {
-                return $"{Prefix}{ID}";
+                return $"{Prefix}";
             }
         }
         private static int lastID = 0;
         public string Prefix { get; set; }
         public int ID {
-            get; private set;
+            get; set;
         }
         public string Name { get; set; }
         public string Description { get; set; }

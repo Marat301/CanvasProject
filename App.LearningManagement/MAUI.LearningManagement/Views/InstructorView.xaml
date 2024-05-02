@@ -77,22 +77,22 @@
                 Text="Courses"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
-            
+
             <ListView
                 ItemsSource="{Binding Courses}"
                 SelectedItem="{Binding SelectedCourse}">
             </ListView>
-            
+
             <Button 
                 Text="Add Course"
                 Clicked="AddCourseClick"
                 />
-            
+
             <Button
                 Text="Edit Course"
                 Clicked="EditCourseClick"
                 />
-            
+
             <Button
                 Text="Remove Course"
                 Clicked="RemoveCourseClick"
@@ -103,6 +103,6 @@
                 Clicked="CancelClicked"
                 />
         </VerticalStackLayout>
-        
+
     </VerticalStackLayout>
 </ContentPage>

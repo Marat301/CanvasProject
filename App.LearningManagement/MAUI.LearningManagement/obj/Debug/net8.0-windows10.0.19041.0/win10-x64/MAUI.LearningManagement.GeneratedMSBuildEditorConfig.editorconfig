@@ -42,6 +42,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI.LearningManagement.Re
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/marat/source/repos/CanvasProject/App.LearningManagement/MAUI.LearningManagement/Views/AssignmentDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.LearningManagement.Views.AssignmentDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AssignmentDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AssignmentDetailView.xaml
+
 [C:/Users/marat/source/repos/CanvasProject/App.LearningManagement/MAUI.LearningManagement/Views/CourseDetailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.LearningManagement.Views.CourseDetailView.xaml
@@ -53,6 +59,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.LearningManagement.Views.InstructorView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\InstructorView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\InstructorView.xaml
+
+[C:/Users/marat/source/repos/CanvasProject/App.LearningManagement/MAUI.LearningManagement/Views/ModuleDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.LearningManagement.Views.ModuleDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ModuleDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ModuleDetailView.xaml
 
 [C:/Users/marat/source/repos/CanvasProject/App.LearningManagement/MAUI.LearningManagement/Views/PersonDetailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

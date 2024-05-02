@@ -56,24 +56,25 @@
             Grid.Column="1"
         ></Entry>
 
-        <!--STUDENT ROSTER-->
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Label Text="Not Enrolled" Grid.Column="0"></Label>
-            <Label Text="Buttons" Grid.Column="1"></Label>
-            <Label Text="Enrolled" Grid.Column="2"></Label>
-        </Grid>
+        <Button 
+            Text="Ok"
+            Clicked="OkClicked"
+        />
 
-        <Button Text="Ok"
-                Clicked="OkClicked"
-                />
-        <Button Text="Cancel"
-                Clicked="CancelClicked"
-                />
+        <Button
+            Text="Add Module"
+            Clicked="AddModuleClick"
+        />
 
+        <Button
+            Text="Add Assignment"
+            Clicked="AddAssignmentClick"
+        />
+
+        <Button 
+            Text="Cancel"
+            Clicked="CancelClicked"
+        />
+        
     </VerticalStackLayout>
 </ContentPage>
